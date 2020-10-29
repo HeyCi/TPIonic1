@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-
+  prenom = "Anne-Claire";
+  disparait = true;
   constructor() {}
-
+  noshow() {
+    this.disparait = !this.disparait
+  }
 }
